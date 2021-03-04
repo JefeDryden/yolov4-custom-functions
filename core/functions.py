@@ -113,11 +113,11 @@ def draw_location(rink_img, data, pred_homo):
             xmin, ymin, xmax, ymax = boxes[i]
             x_location = (xmin+xmax)/2
             
-            point = np.float32([[[x_location*xcoord_resize, ymin*ycoord_resize]]])
+            point = np.float32([[[x_location*xcoord_resize, ymax*ycoord_resize]]])
             try: 
                 warped_point = cv2.perspectiveTransform(point,pred_homo)
-                x_shift = 0.2*(warped_point[0][0][0]-640)
-                x_warped, y_warped = warped_point[0][0][0]*x_ratio-x_shift, warped_point[0][0][1]*y_ratio+100
+                
+                x_warped, y_warped = warped_point[0][0][0]*x_ratio, warped_point[0][0][1]*y_ratio
                 
                 #drawing
                 
