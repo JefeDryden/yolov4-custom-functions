@@ -11,9 +11,9 @@ anchorClasses = [4,5,6,7,9,10]
 playerClasses = [0,1,2,3]
 
 classDict = {
-    0: {"Name": "TOR", "Colour": (91, 32, 0)},
-    1: {"Name": "LEAFG", "Colour": (255,255,0)},
-    2: {"Name": "MTL", "Colour": (45, 30, 175)},
+    0: {"Name": "TOR", "Colour": (0, 32, 91)},
+    1: {"Name": "LEAFG", "Colour": (0, 255,255)},
+    2: {"Name": "MTL", "Colour": (175, 30, 45)},
     3: {"Name": "HABSG", "Colour": (255, 0, 255)},
     4: {"Name": "EXCEL", "FixX": 1230, "FixY": 414, "ConstantW": 400, "ConstantH": 850, "Angle": 31.468016, "Width": 0.107031}, #H 3002.674665500596 W 642.3408245746804
     5: {"Name": "ROGERS", "FixX": 220, "FixY": 544, "ConstantW": 420, "ConstantH": 630, "Angle": -21.072726619950554, "Width": 0.123438}, #286.7520440271298 W  553.5512653394878 H
